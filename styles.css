@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6c757d; /* Calmer grey color */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack the logo and text vertically */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Add some space between logo and text */
+}
+
+header .logo {
+    width: 100px; /* Increase logo size */
+    height: auto;
+    margin: 0 5px; /* Reduce space between logos */
+}
+
+.header-text {
+    text-align: center;
+}
+
+.main-title {
+    font-weight: bold; /* Make the main title bold */
+}
+
+main {
+    padding: 1em;
+    text-align: center; /* Center the content in the main section */
+}
+
+h1, h2, h3 {
+    margin: 0.2em 0; /* Reduce margin for titles */
+    color: #000; /* Set title color to black */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Center the list */
+    text-align: left; /* Align text to the left within the list */
+    width: 100%; /* Make the list take the full width */
+    max-width: 600px; /* Set a max width for the list */
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #6c757d; /* Calmer grey color */
+    padding: 1em 2em; /* Increase padding for larger buttons */
+    border: 2px solid #6c757d; /* Increase border width */
+    border-radius: 25px; /* Make the buttons more rounded */
+    display: block; /* Make the links block elements */
+    width: 100%; /* Make the links take the full width of the list item */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 1.2em; /* Increase font size */
+    text-align: center; /* Center text within the buttons */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+ul li a:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+    border-color: #5a6268; /* Match border color on hover */
+}
+
+footer {
+    background-color: #6c757d; /* Calmer grey color */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 0.5em 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    ul {
+        width: 100%; /* Make the list take the full width on small screens */
+    }
+
+    ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #6c757d; /* Calmer grey color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
